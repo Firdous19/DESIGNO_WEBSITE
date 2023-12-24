@@ -73,3 +73,18 @@ body {
     display: flex;
     justify-content: space-between;
 }
+#title-card 
+{
+    display : flex; 
+    justify-content: center;
+}
+.inside-title-card 
+{
+    background-color: #e7816b;
+    width : 70%; 
+    height : 250px;
+}
+.circle-svg
+{
+
+}
