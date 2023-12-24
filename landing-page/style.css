@@ -60,16 +60,16 @@ body {
 .container {
     width: 1111px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .card {
+    border: 2px solid black;
     margin-top: 67px;
     height: 640px;
     background-color: var(--peach);
     border-radius: 15px;
     overflow: hidden;
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }
