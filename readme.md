@@ -1,1 +1,1 @@
-Everything is fucked.
+"

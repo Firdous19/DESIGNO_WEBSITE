@@ -18,7 +18,7 @@ body {
 
 .navbar {
     /* border: 2px solid black; */
-    padding: 2rem 5rem;
+    padding: 4rem 5rem 1.5rem 5rem;
 }
 
 .header {
@@ -58,18 +58,98 @@ body {
 /* CONTAINER*/
 
 .container {
-    width: 1111px;
+    /* width: 1230px; */
+    width: 85%;
     margin: 0 auto;
 }
 
 .card {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin-top: 67px;
     height: 640px;
     background-color: var(--peach);
     border-radius: 15px;
     overflow: hidden;
     position: relative;
-    display: flex;
-    justify-content: space-between;
+}
+
+.card::after {
+    content: url(../images/bg-pattern-hero-home.svg);
+    position: absolute;
+    width: 1110px;
+    height: 640px;
+    left: 50%;
+    top: 0px;
+
+}
+
+.card-left {
+    color: #fff;
+    width: 540px;
+    height: 350px;
+    padding-left: 95px;
+    padding-top: 145px;
+}
+
+.card-left h1 {
+    width: 540px;
+    height: 165px;
+    font-size: 3rem;
+}
+
+.card .card-left p {
+    margin-top: 30px;
+    margin-bottom: 3rem;
+    font-size: 17px;
+}
+
+.card_mobile-image {
+    position: absolute;
+    left:55%;
+    top: -30px;
+    overflow: hidden;
+}
+
+.btn {
+    background: #ffffff;
+    font-size: 17px;
+    line-height: 22px;
+    /* letter-spacing: 1px; */
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 152px;
+    height: 56px;
+    border: none;
+    transition: all 0.7s ease;
+    transition-property: color, background-color;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--light-peach);
+}
+
+.widget {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 330px);
+    gap: 20px;
+    place-content: center;
+    /* width: 1230px; */
+    width: 85%;
+    /* border: 2px solid black; */
+    margin: 3rem auto;
+}
+
+.web-design {
+    grid-row: span 2;
+}
+
+.widget>div {
+    background-color: black;
+    border-radius: 20px;
 }
