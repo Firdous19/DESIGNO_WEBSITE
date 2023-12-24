@@ -72,6 +72,16 @@ body {
     position: relative;
 }
 
+.card::after {
+    content: url(../images/bg-pattern-hero-home.svg);
+    position: absolute;
+    width: 1110px;
+    height: 640px;
+    left: 585px;
+    top: 0px;
+
+}
+
 .card-left {
     color: #fff;
     width: 540px;
@@ -118,6 +128,26 @@ body {
     cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: var(--light-peach);
+}
+
+.widget {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 330px);
+    gap: 20px;
+    place-content: center;
+    width: 1230px;
+    border: 2px solid black;
+    margin: 3rem auto;
+}
+
+.web-design {
+    grid-row: span 2;
+}
+
+.widget>div {
+    background-color: black;
+    border-radius: 20px;
 }
