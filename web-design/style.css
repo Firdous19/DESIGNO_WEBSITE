@@ -25,7 +25,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 2px solid black; */
     width: 90%;
     margin: 0 auto;
 }
@@ -83,7 +82,6 @@ body {
     background-color: #e7816b;
     width : 85%; 
     height : 250px;
-    /* overflow: hidden; */
     position: relative;
     border-radius: 20px;
 }
@@ -93,15 +91,8 @@ body {
     background: url(../images/bg-pattern-call-to-action.svg)no-repeat center center/cover;
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 1%;
+    width: 70%;
     height: 100%;
-    /* z-index: 2; */
-}
-.circle-svg
-{
-   position : absolute; 
-   bottom : 100px; 
-   transform : rotateZ(180deg); 
-   /* overflow: hidden; */
+    transform: rotateX(180deg);
 }
