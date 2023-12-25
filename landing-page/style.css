@@ -229,9 +229,8 @@ body {
     background-color: var(--light-peach);
 }
 
-.section_skills{
+.section_skills {
     margin: 5rem 0;
-    /* border: 2px solid black; */
 }
 
 .skills_container {
@@ -268,4 +267,53 @@ body {
     font-size: 18px;
     margin-top: 10px;
     color: #333136;
+}
+
+/* FOOTER */
+
+.footer {
+    position: relative;
+}
+
+.get_in_touch {
+    padding: 0 2rem;
+    width: 80%;
+    height: 320px;
+    border-radius: 15px;
+    background-color: var(--peach);
+    margin: 2rem auto;
+    /* margin-bottom: 0; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left_section h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin: -1rem 0;
+    color: white;
+    font-weight: 590;
+}
+
+.left_section p {
+    color: white;
+    font-size: 18px;
+    margin-top: 1.5rem;
+    width: 60%;
+}
+
+.get_in_touch .btn {
+    letter-spacing: 2px;
+    width: 170px;
+}
+
+.contact_us {
+    /* position: absolute; */
+    height: 500px;
+    background-color: var(--dark-gray);
+}
+
+.contact_us .navbar ul li {
+    color: var(--white);
 }
