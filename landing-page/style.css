@@ -105,7 +105,7 @@ body {
 
 .card_mobile-image {
     position: absolute;
-    left:55%;
+    left: 55%;
     top: -30px;
     overflow: hidden;
 }
@@ -133,23 +133,96 @@ body {
     background-color: var(--light-peach);
 }
 
-.widget {
+.grid__container {
+    padding-left: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 330px);
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 345px);
+    gap: 50px 25px;
     place-content: center;
-    /* width: 1230px; */
     width: 85%;
-    /* border: 2px solid black; */
-    margin: 3rem auto;
+    height: 700px;
+    margin: 6rem auto;
+    position: relative;
 }
+
+.widgets-images {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
 
 .web-design {
     grid-row: span 2;
+    position: relative;
+    /* border: 2px solid black; */
 }
 
-.widget>div {
-    background-color: black;
-    border-radius: 20px;
+.app-design {
+    margin-bottom: 20px;
+    position: relative;
+    /* border: 2px solid black; */
+    /* width: 100%; */
+    height: 105%;
+
+}
+
+.graphic-design {
+    position: relative;
+    /* border: 2px solid black; */
+
+}
+
+
+.projects__overlay--dark:hover {
+    background-color: var(--peach);
+}
+
+
+
+.widgets_heading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-53%, -50%);
+    /* border: 2px solid white; */
+    width: 80%;
+}
+
+.widgets_heading .design_heading {
+    color: #fff;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.view_project {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 550;
+    padding-left: 1px;
+    text-align: center;
+    color: white;
+}
+
+.widgets_overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: background-color 0.7s ease;
+}
+
+.widgets_overlay:hover {
+    background-color: var(--light-peach);
 }
