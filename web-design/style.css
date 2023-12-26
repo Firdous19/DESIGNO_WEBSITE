@@ -108,9 +108,8 @@ body {
     margin-top : 10rem; 
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
 }
-.grid-arrangement
+.grid-arrangement-template-cards
 {
     display : grid; 
     grid-template-columns: 1fr 1fr 1fr;
@@ -118,7 +117,7 @@ body {
     width : 85%;
     row-gap: 2rem;
 }
-.jd
+.image-container
 {
     width : 90%;
     height : 150%;
@@ -127,16 +126,17 @@ body {
     overflow: hidden;
     border-radius: 10% 10% 0 0;
 }
-.grid-arrangement img
+.grid-arrangement-template-cards img
 {
    height :100%; 
    width: 100%;
    border-radius: 10% 10% 0 0;
    transition: all 0.5s ease-in-out;
 }
-.grid-arrangement img:hover
+.grid-arrangement-template-cards img:hover
 {
    transform: scale(1.1);
+   cursor : pointer; 
 }
 
 .cards
@@ -186,4 +186,60 @@ body {
     font-weight: 600;
     color : black;
     width : 95%; 
+}
+#other-pages
+{
+    display : flex; 
+    justify-content: center;
+    margin-bottom : 100rem; 
+    margin-top : 10rem; 
+}
+.grid-arrangement-others
+{
+    display : flex; 
+    width : 85%;
+    gap : 3rem;
+    justify-content: center;
+}
+.app-design
+{
+        background-image: url("../images/image-app-design.jpg");
+        background-repeat: no-repeat;
+        width : 90%; 
+}
+.graphic-design
+{
+    background-image: url("../images/image-graphic-design.jpg");
+    background-repeat: no-repeat;
+    width : 90%; 
+}
+
+.other-card
+{
+    height : 18rem;
+    display: flex;
+    border-radius: 20px;
+}
+.container-other
+{
+    width : 100%; 
+    display : flex; 
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: grayscale(100%);
+    background-color: rgba(11, 11, 11, 0.5);
+    backdrop-filter: contrast(110%) blur(1px);
+    border-radius: 20px; 
+    transition: all 0.7s;
+}
+.container-other:hover
+{
+    cursor: pointer;
+    background-color: hsl(11, 73%, 66%,0.5); ;
+}
+.other-card h1 
+{
+    color : white; 
+    font-size: 3rem;
+    font-weight: bold; 
 }
