@@ -28,6 +28,7 @@ body {
     align-items: center;
     width: 90%;
     margin: 0 auto;
+    padding-top : 2rem; 
 }
 
 .header-image img {
@@ -190,8 +191,7 @@ body {
 #other-pages
 {
     display : flex; 
-    justify-content: center;
-    margin-bottom : 100rem; 
+    justify-content: center; 
     margin-top : 10rem; 
 }
 .grid-arrangement-others
@@ -242,4 +242,123 @@ body {
     color : white; 
     font-size: 3rem;
     font-weight: bold; 
+}
+#pre-footer
+{
+    margin-top : 10rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+.get-in-touch
+{
+    width : 85%;
+    background-color: var(--peach);
+    height : 20rem; 
+    border-radius : 20px; 
+    color : white; 
+    padding : 0 5rem; 
+    z-index : 1; 
+}
+.touch-btn
+{
+    border : 1px solid black; 
+    border : none; 
+    padding : 1rem;
+    border-radius : 15px; 
+    margin-right: 2rem;
+    font-weight: 500;
+    transition: all 0.3s; 
+}
+.touch-btn:hover
+{
+    background-color: rgb(227, 203, 203,0.6);
+    color : white; 
+}
+.first-col 
+{
+    display : flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+.second-col
+{
+    display : flex; 
+    justify-content:right; 
+    align-items: center;
+}
+.pre-footer-row 
+{
+    height : 100%; 
+}
+.footer-black
+{
+    background-color: #1d1c1e;
+    width : 100%;  
+    color : grey; 
+    position: absolute; 
+    top:150rem;
+    display : flex; 
+    justify-content: center;
+    font-family: "Jost", sans-serif;
+    font-weight: bold;
+    padding-bottom: 4rem;
+}
+.footer-logo
+{
+    width : 202px;
+    height : 27px; 
+}
+.footer-container
+{
+    margin-top : 10rem; 
+    width : 85%; 
+    display : flex; 
+    flex-direction: column;
+    align-items: center;
+}
+.footer-company-details 
+{
+    list-style: none;
+    color : white; 
+    display : flex; 
+    justify-content: center;
+    gap : 1rem; 
+    padding:0; 
+    margin : 0; 
+}
+.footer-company-details a 
+{
+    color : white; 
+    text-decoration: none;
+}
+.footer-row-1 .col
+{
+    display : flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding : 2rem 0 3rem 0; 
+}
+.footer-container .row 
+{
+    width: 100%;
+}
+
+.footer-row-2 
+{
+    border-top : 1px solid grey; 
+}
+
+.footer-row-3
+{
+    padding-top : 3rem;
+}
+
+.footer-icon-col 
+{
+    display : flex; 
+    justify-content: right;
+    gap : 1rem; 
+    padding : 0; 
 }

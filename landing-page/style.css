@@ -30,6 +30,7 @@ body {
     /* border: 2px solid black; */
     width: 90%;
     margin: 0 auto;
+    padding-top : 2rem; 
 }
 
 .header-image img {
