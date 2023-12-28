@@ -114,7 +114,7 @@ body {
 {
     display : grid; 
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     width : 85%;
     row-gap: 2rem;
 }
@@ -316,7 +316,7 @@ body {
     width : 100%;  
     color : grey; 
     position: absolute; 
-    top:150rem;
+    top:117rem;
     display : flex; 
     justify-content: center;
     font-family: "Jost", sans-serif;

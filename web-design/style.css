@@ -210,14 +210,14 @@ body {
 {
         background-image: url("../images/image-web-design-small.jpg");
         background-repeat: no-repeat;
-        width : 90%; 
+        width : 100%; 
         background-size: cover;
 }
 .graphic-design
 {
     background-image: url("../images/image-graphic-design.jpg");
     background-repeat: no-repeat;
-    width : 90%; 
+    width : 100%; 
     background-size: cover;
 }
 .other-card
