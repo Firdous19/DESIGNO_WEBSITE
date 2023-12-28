@@ -1,0 +1,123 @@
+.card {
+    /* border: 2px solid black; */
+    margin-top: 67px;
+    height: 530px;
+    background-color: var(--peach);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    /* padding-bottom: 3rem; */
+}
+
+.card::after {
+    content: url(../images/bg-pattern-hero-home.svg);
+    position: absolute;
+    width: 1110px;
+    height: 500px;
+    left: 50%;
+    top: 0px;
+
+}
+
+.card-left {
+    color: #fff;
+    width: 540px;
+    height: 350px;
+    padding-left: 110px;
+    padding-top: 100px;
+}
+
+.card-left h1 {
+    width: 540px;
+    height: auto;
+    font-size: 3rem;
+}
+
+.card .card-left p {
+    margin-top: 30px;
+    margin-bottom: 3rem;
+    font-size: 17px;
+}
+
+.btn {
+    background: #ffffff;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 152px;
+    height: 56px;
+    border: none;
+    transition: all 0.7s ease;
+    transition-property: color, background-color;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--light-peach);
+}
+
+.section_skills {
+    margin-top: 5rem;
+    /* border: 2px solid black; */
+}
+
+.skills_container {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    margin: 3rem auto;
+}
+
+.skills_container-card {
+    width: 27%;
+    padding: 30px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills_container-card .btn {
+    background-color: var(--peach);
+    letter-spacing: 2px;
+    font-weight: 600;
+    width: 11rem;
+    transition: all 0.5s ease-in-out;
+    color: var(--white);
+}
+
+.skills_container-card .btn.btn:hover {
+    background-color: var(--light-peach);
+}
+
+
+.skills_container-card h1 {
+    color: var(--dark-gray);
+    letter-spacing: 5px;
+    margin: 2rem 0;
+}
+
+.skills_container-card p {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333136;
+}
+
+
+/* .footer {
+    position: relative;
+} */
+
+.contact_us {
+    margin-top: 5rem;
+}
