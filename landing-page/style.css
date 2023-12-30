@@ -7,6 +7,7 @@
 
 body {
     font-family: "Jost", sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -141,7 +142,7 @@ body {
     cursor: pointer;
 }
 
-.btn a{
+.btn a {
     color: var(--black);
     text-decoration: none;
 }
