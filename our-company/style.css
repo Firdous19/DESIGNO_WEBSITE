@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Jost", sans-serif;
+}
+
+:root {
+    --peach: hsl(11, 73%, 66%);
+    --light-peach: hsl(11, 100%, 80%);
+    --black: hsl(270, 3%, 11%);
+    --dark-gray: hsl(264, 5%, 20%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(210, 17%, 95%);
+}
+
+.navbar {
+    /* border: 2px solid black; */
+    padding: 2rem 5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding-top : 2rem; 
+}
+.header a
+{
+    text-decoration: none;
+    color : black; 
+}
+.header-image img {
+    height: 27px;
+}
+
+.right-navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.right-navbar ul li {
+    list-style: none;
+    padding: 10px;
+    margin: 0 1rem;
+    letter-spacing: 2px;
+    font-size: 17px;
+    font-weight: 100;
+    transition: all 0.2s ease-in-out;
+}
+
+.right-navbar ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* CONTAINER*/
+
+.container {
+    width: 1111px;
+    margin: 0 auto;
+}
+
+#about-us
+{
+    margin-top : 4rem; 
+    display: flex;
+    justify-content: center; 
+}
+ 
+.about-us-description
+{
+    background-color: var(--peach);
+    width : 85%;
+    border-radius : 20px; 
+}
+
+.inside-about-us-box
+{
+    display : flex; 
+    justify-content: space-between;
+}
+.inside-about-us-box .col-one
+{
+    display : flex; 
+    flex-direction: column;
+    justify-content: center;
+    padding : 0 5rem; 
+    font-family: "Jost", sans-serif;
+    color : white; 
+    font-weight : bold; 
+}
+
+#world-class-talent
+{
+    margin-top : 10rem; 
+    display : flex; 
+    justify-content: center; 
+}
+
+.world-class-talent-description
+{
+    background-color: hsl(12, 39%, 82%,0.3);
+    width : 85%;
+    border-radius : 20px; 
+}
+
+.inside-world-class-talent-box
+{
+    display : flex; 
+    justify-content: space-between;
+}
+
+.inside-world-class-talent-box .col-two
+{
+    display : flex; 
+    flex-direction: column;
+    justify-content: center;
+    padding : 0 5rem; 
+    font-family: "Jost", sans-serif;
+    color : white; 
+    font-weight : bold; 
+}
+
+#locations-section-co-page
+{
+    margin-top : 10rem;
+    display : flex; 
+    justify-content: center;
+}
+
+.loc-div-co-page 
+{
+    width : 85%; 
+    display : flex; 
+    justify-content: space-between;
+    font-family: "Jost", sans-serif;
+    font-size : 0.5rem; 
+}
+
+.img-wrapper-co-page
+{
+    background-color: hsl(12, 39%, 82%,0.3) ;
+    border-radius : 100%; 
+    padding : 2rem;  
+}
+
+.locations-col-co-page 
+{
+    display : flex; 
+    flex-direction: column;
+    align-items: center; 
+}
+
+.locations-col-co-page h4
+{
+    margin-top : 1rem;
+}
+
+.locations-col-co-page .co-btn 
+{
+    margin-top : 1rem; 
+}
+
+.co-btn
+{
+    width : 50%; 
+    padding : 1rem; 
+    border-radius : 15px; 
+    background-color: var(--peach);
+    font-size : 0.9rem; 
+    color : white; 
+    border : none; 
+    font-weight : 900; 
+    letter-spacing: 0.03rem;
+    transition: all 0.7s;
+}
+.co-btn:hover
+{
+    background-color: hsl(11, 73%, 66%,0.4) ;
+}
+
+#the-real-deal
+{
+    margin-top : 10rem; 
+    display: flex;
+    justify-content: center;
+}
+
+.real-deal-description 
+{
+    width : 85%; 
+    border-radius: 20px;
+    background-color: hsl(12, 39%, 82%,0.3);
+}
+.inside-real-deal-box
+{
+    display : flex; 
+    justify-content: space-between;
+}
+.inside-real-deal-box .col-one
+{
+    display : flex; 
+    flex-direction: column;
+    justify-content: center;
+    padding : 0 5rem; 
+    font-family: "Jost", sans-serif;
+    color : var(--peach); 
+    font-weight : bold; 
+}
+
+#pre-footer
+{
+    margin-top : 10rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+.get-in-touch
+{
+    width : 85%;
+    background-color: var(--peach);
+    height : 20rem; 
+    border-radius : 20px; 
+    color : white; 
+    padding : 0 5rem; 
+    z-index : 1; 
+}
+.touch-btn
+{
+    border : 1px solid black; 
+    border : none; 
+    padding : 1rem;
+    border-radius : 15px; 
+    margin-right: 2rem;
+    font-weight: 500;
+    transition: all 0.3s; 
+}
+.touch-btn:hover
+{
+    background-color: rgb(227, 203, 203,0.6);
+    color : white; 
+}
+.first-col 
+{
+    display : flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+.second-col
+{
+    display : flex; 
+    justify-content:right; 
+    align-items: center;
+}
+.pre-footer-row 
+{
+    height : 100%; 
+}
+.footer-black
+{
+    background-color: #1d1c1e;
+    width : 100%;  
+    color : grey; 
+    position: absolute; 
+    top : 200rem;
+    display : flex; 
+    justify-content: center;
+    font-family: "Jost", sans-serif;
+    font-weight: bold;
+    padding-bottom: 4rem;
+}
+.footer-logo
+{
+    width : 202px;
+    height : 27px; 
+}
+.footer-container
+{ 
+    margin-top : 10rem; 
+    width : 85%; 
+    display : flex; 
+    flex-direction: column;
+    align-items: center;
+}
+.footer-company-details 
+{
+    list-style: none;
+    color : white; 
+    display : flex; 
+    justify-content: center;
+    gap : 1rem; 
+    padding:0; 
+    margin : 0; 
+}
+.footer-company-details a 
+{
+    color : white; 
+    text-decoration: none;
+}
+.footer-row-1 .col
+{
+    display : flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding : 2rem 0 3rem 0; 
+}
+.footer-container .row 
+{
+    width: 100%;
+}
+
+.footer-row-2 
+{
+    border-top : 1px solid grey; 
+}
+
+.footer-row-3
+{
+    padding-top : 3rem;
+}
+
+.footer-icon-col 
+{
+    display : flex; 
+    justify-content: right;
+    gap : 1rem; 
+    padding : 0; 
+}
