@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Jost", sans-serif;
+}
+
+:root {
+    --peach: hsl(11, 73%, 66%);
+    --light-peach: hsl(11, 100%, 80%);
+    --black: hsl(270, 3%, 11%);
+    --dark-gray: hsl(264, 5%, 20%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(210, 17%, 95%);
+}
+
+.navbar {
+    /* border: 2px solid black; */
+    padding: 2rem 5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding-top : 2rem; 
+}
+.header a
+{
+    text-decoration: none;
+    color : black; 
+}
+.header-image img {
+    height: 27px;
+}
+
+.right-navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.right-navbar ul li {
+    list-style: none;
+    padding: 10px;
+    margin: 0 1rem;
+    letter-spacing: 2px;
+    font-size: 17px;
+    font-weight: 100;
+    transition: all 0.2s ease-in-out;
+}
+
+.right-navbar ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* CONTAINER*/
+
+.container {
+    width: 1111px;
+    margin: 0 auto;
+}
+
+#about-us
+{
+    margin-top : 4rem; 
+    display: flex;
+    justify-content: center; 
+}
+ 
+.about-us-description
+{
+    background-color: var(--peach);
+    width : 85%;
+    border-radius : 20px; 
+}
+
+.inside-about-us-box
+{
+    display : flex; 
+    justify-content: space-between;
+}
+.inside-about-us-box .col-one
+{
+    display : flex; 
+    flex-direction: column;
+    justify-content: center;
+    padding : 0 5rem; 
+    font-family: "Jost", sans-serif;
+    color : white; 
+    font-weight : bold; 
+}
+
+#world-class-talent
+{
+    margin-top : 10rem; 
+    display : flex; 
+    justify-content: center; 
+    margin-bottom: 10rem;
+}
+
+.world-class-talent-description
+{
+    background-color: hsl(12, 39%, 82%,0.3);
+    width : 85%;
+    border-radius : 20px; 
+}
+
+.inside-world-class-talent-box
+{
+    display : flex; 
+    justify-content: space-between;
+}
+
+.inside-world-class-talent-box .col-two
+{
+    display : flex; 
+    flex-direction: column;
+    justify-content: center;
+    padding : 0 5rem; 
+    font-family: "Jost", sans-serif;
+    color : white; 
+    font-weight : bold; 
+}
