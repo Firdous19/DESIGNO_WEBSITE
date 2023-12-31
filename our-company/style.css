@@ -170,7 +170,7 @@ body {
 
 .co-btn
 {
-    width : 50%; 
+    width : 100%; 
     padding : 1rem; 
     border-radius : 15px; 
     background-color: var(--peach);
