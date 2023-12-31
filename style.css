@@ -87,7 +87,7 @@ body {
 }
 
 .card::after {
-    content: url(../images/bg-pattern-hero-home.svg);
+    content: url(./images/bg-pattern-hero-home.svg);
     position: absolute;
     width: 1110px;
     height: 640px;
