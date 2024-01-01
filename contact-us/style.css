@@ -90,6 +90,25 @@ body {
     position: relative;
 }
 
+.form-item p {
+    font-size: 20px;
+    font-style: italic;
+    color: var(--light-gray);
+    position: absolute;
+    top: -2px;
+    right: 0;
+    display: none;
+}
+
+.form-item:last-child() {
+    top: 40px;
+    display: none;
+}
+
+.form-item p.active {
+    display: block;
+}
+
 input,
 textarea {
     background-color: transparent !important;
