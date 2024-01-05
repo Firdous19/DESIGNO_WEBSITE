@@ -90,14 +90,13 @@ body {
     position: relative;
 }
 
-.form-item p {
+.input_para {
     font-size: 20px;
     font-style: italic;
     color: var(--light-gray);
     position: absolute;
     top: -2px;
     right: 0;
-    display: none;
 }
 
 .form-item:last-child() {
