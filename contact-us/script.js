@@ -1,42 +1,53 @@
+
 const submitButton = document.querySelector('#btn');
-
+const formItem = document.querySelectorAll(".form-item"); 
 const forminputs = [];
-const empty = [];
 
-let obj = {
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
-};
 
 submitButton.addEventListener('click', () => {
     const inputs = document.querySelectorAll('.form_input');
-    const input_paras = document.querySelectorAll('.input_para');
-    let i = 0;
-
     const arrinput = Array.from(inputs)
-    const arrInputPara = Array.from(input_paras);
-
-    for (const input of arrinput) {
-        if (input.value === '') {
-            empty.push(i);
-        }
-        i++;
+    // const arrInputPara = Array.from(input_paras);
+    if(submitButton.textContent==="Submitted")
+    {
+        alert("You have already submitted once"); 
     }
-
-    if (empty.length === 0) {
-        alert("Form submitted Succesfully");
-        arrinput.forEach((input) => {
-            input.value = '';
-        });
+    const input_paras = document.querySelectorAll('.input_para');
+    for(const item of input_paras)
+    {
+        item.remove();  
     }
-    else {
-        for (const index of empty) {
-            arrInputPara[index].classList = 'active';
-        }
+    for (let i=0;i<arrinput.length;i++) {
+    if (arrinput[i].value === '') {
+               formItem[i].insertAdjacentHTML("beforeend","<p class='input_para'>field can't be empty</p>"); 
+    }}
+    if(arrinput.every((item)=>(item.value!=="")))
+    {
+         
+          for(const item of arrinput)
+          {
+             item.value="";
+          }
+          submitButton.textContent="Submitted"; 
     }
-});
+  
+    }); 
+ 
+  
+  
+//   dsdsdsdsdsds
+  
+    // if (empty.length === 0) {
+    //     alert("Form submitted Succesfully");
+    //     arrinput.forEach((input) => {
+    //         input.value = '';
+    //     });
+    // }
+    // else {
+    //     for (const index of empty) {
+    //         arrInputPara[index].classList = 'active';
+    //     }
+    // };
 
 
 // console.log(inputs)
