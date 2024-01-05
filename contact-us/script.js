@@ -1,17 +1,23 @@
 
+
+
 const submitButton = document.querySelector('#btn');
 const formItem = document.querySelectorAll(".form-item"); 
 const forminputs = [];
 
+// 
+
+
+
+
+//
 
 submitButton.addEventListener('click', () => {
     const inputs = document.querySelectorAll('.form_input');
     const arrinput = Array.from(inputs)
     // const arrInputPara = Array.from(input_paras);
-    if(submitButton.textContent==="Submitted")
+    if(submitButton.textContent!=="Submitted")
     {
-        alert("You have already submitted once"); 
-    }
     const input_paras = document.querySelectorAll('.input_para');
     for(const item of input_paras)
     {
@@ -30,7 +36,9 @@ submitButton.addEventListener('click', () => {
           }
           submitButton.textContent="Submitted"; 
     }
-  
+   }
+   else 
+   alert("You have already submitted once"); 
     }); 
  
   
