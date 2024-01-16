@@ -3,8 +3,12 @@
 
 const submitButton = document.querySelector('#btn');
 const formItem = document.querySelectorAll(".form-item"); 
-const forminputs = [];
+const nameField = document.getElementById("name"); 
+const emailField = document.getElementById("email"); 
+const numberField = document.getElementById("number"); 
+const textAreaField = document.getElementById("textarea"); 
 
+ 
 // 
 
 
@@ -12,7 +16,7 @@ const forminputs = [];
 
 //
 
-submitButton.addEventListener('click', () => {
+submitButton.addEventListener('click',async () => {
     const inputs = document.querySelectorAll('.form_input');
     const arrinput = Array.from(inputs)
     // const arrInputPara = Array.from(input_paras);
@@ -29,35 +33,35 @@ submitButton.addEventListener('click', () => {
     }}
     if(arrinput.every((item)=>(item.value!=="")))
     {
-         
+        const username = nameField.value; 
+        const userEmail = emailField.value; 
+        const userNumber = numberField.value; 
+        const userDes = textAreaField.value;
           for(const item of arrinput)
           {
              item.value="";
           }
           submitButton.textContent="Submitted"; 
+
+          const obj = {
+            username,userEmail,userNumber,userDes
+          }
+          
+         const res = await fetch("http://localhost:3000/submitForm",{
+            method : "POST",
+            headers : {
+            "Content-Type" : "application/json",
+        },
+            body : JSON.stringify(obj) 
+        }); 
+        const data = await res.json(); 
+        console.log(data); 
     }
    }
    else 
    alert("You have already submitted once"); 
     }); 
- 
-  
-  
-//   dsdsdsdsdsds
-  
-    // if (empty.length === 0) {
-    //     alert("Form submitted Succesfully");
-    //     arrinput.forEach((input) => {
-    //         input.value = '';
-    //     });
-    // }
-    // else {
-    //     for (const index of empty) {
-    //         arrInputPara[index].classList = 'active';
-    //     }
-    // };
 
 
-// console.log(inputs)
 
 
